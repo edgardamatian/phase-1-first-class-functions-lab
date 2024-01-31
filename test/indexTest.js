@@ -24,8 +24,8 @@ describe('index.js', function () {
       expect(selectingDrivers[0]).to.eql(returnFirstTwoDrivers);
     });
 
-    it('has the `returnLastTwoDrivers` function to as its last element', function () {
-      expect(selectingDrivers[1]).to.eql(returnLastTwoDrivers);
+    it('has the `returnLastTwoDrivers` function as its last element', function () {
+      expect(selectingDrivers[selectingDrivers.length - 1]).to.eql(returnLastTwoDrivers);
     });
 
     it('allows us to invoke either function from the array', function () {
